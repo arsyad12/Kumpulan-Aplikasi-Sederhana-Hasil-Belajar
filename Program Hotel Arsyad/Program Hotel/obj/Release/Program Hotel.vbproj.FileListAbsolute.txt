@@ -1,0 +1,4 @@
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel\Program Hotel\obj\Release\ResolveAssemblyReference.cache
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel\Program Hotel\obj\Release\WindowsApplication1.Form1.resources
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel\Program Hotel\obj\Release\WindowsApplication1.Resources.resources
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel\Program Hotel\obj\Release\Program Hotel.vbproj.GenerateResource.Cache

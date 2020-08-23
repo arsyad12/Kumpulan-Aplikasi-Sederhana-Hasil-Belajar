@@ -1,0 +1,46 @@
+TB Peminjaman
+
+ID Peminjaman
+Tgl Pinjam
+TglTempoKembali 
+Status
+ID BUKU
+Id Anggota
+Keterlambatan
+Tgl Kembali 
+Denda
+
+
+
+
+String transaksi = tidbuku.getText();  // TODO add your handling code here:
+         try{
+        
+String sql="select * from tbbuku where "+ "id_buku='" +
+        tidbuku.getText()
++"'";
+ rs = stat.executeQuery(sql);
+       if (rs.next()){
+   jTextArea1.setText("\n=========DATA BUKU==============" + "\n"
+                    + "            : " + rs.getString(7) +"\n"
+                    + "              : " + rs.getString(8) +"\n"
+                    + " ID BUKu      : \" + rs.getString(1)+\"\\n\"\n" +
+"                    + \"JUDUL        : \" + rs.getString(2)+ \"\\n\"\n" +
+"                    + \"JUMlAH      : \" + rs.getString(3)+ \"\\n\"\n" +
+"                    + \"KATEGORI                 : \" + rs.getString(4)+ \"\\n\"\n" +
+"                    + \"TANGGAAL                : \" + rs.getString(5) +\"\\n\"\n" +
+"                    + \"PENGARANG         : \" + rs.getString(6) +\"\\n\"\n" +
+"                    + \"PENERBIT      : " + rs.getString(9) +"\n"
+                    +
+
+                    "\n============================================"+"\n");
+            }else{
+                
+                jTextArea1.setText("");
+                tidbuku.setText("");
+                stat.close();
+                con.close();
+            }
+        }catch(ClassNotFoundException | InstantiationException | IllegalAccessException | SQLException | HeadlessException ex){
+                JOptionPane.showMessageDialog(null,"Data tidak ditemukan");
+        }

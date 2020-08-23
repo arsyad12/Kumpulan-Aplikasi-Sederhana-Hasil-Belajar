@@ -1,0 +1,36 @@
+.menu{
+	position:relative;
+	display: inline-block;
+
+}
+
+
+.dropmenu{
+	background-color: black;
+	display: inline-block;
+	border: none;
+	color: white;
+}
+
+.menu-content{
+	display: none;
+	position: absolute;
+	background-color: white;
+}
+
+.menu-content a{
+display: block;
+text-decoration: none;
+padding: 12px 12px;
+}
+
+
+.menu-content a:hover{background-color: black}
+
+.menu:hover .menu-content{
+display: block;
+}
+
+.menu:hover .dropmenu{
+	background-color: black;
+}

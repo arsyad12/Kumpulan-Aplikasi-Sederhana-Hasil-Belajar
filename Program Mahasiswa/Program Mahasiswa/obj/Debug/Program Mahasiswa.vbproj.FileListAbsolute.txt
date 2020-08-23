@@ -1,0 +1,13 @@
+D:\Tugas Kuliah Ar, jgn delete please\Program Mahasiswa\Program Mahasiswa\bin\Debug\Program Mahasiswa.exe
+D:\Tugas Kuliah Ar, jgn delete please\Program Mahasiswa\Program Mahasiswa\bin\Debug\Program Mahasiswa.pdb
+D:\Tugas Kuliah Ar, jgn delete please\Program Mahasiswa\Program Mahasiswa\bin\Debug\Program Mahasiswa.xml
+D:\Tugas Kuliah Ar, jgn delete please\Program Mahasiswa\Program Mahasiswa\obj\Debug\ResolveAssemblyReference.cache
+D:\Tugas Kuliah Ar, jgn delete please\Program Mahasiswa\Program Mahasiswa\obj\Debug\WindowsApplication1.Latihan1.resources
+D:\Tugas Kuliah Ar, jgn delete please\Program Mahasiswa\Program Mahasiswa\obj\Debug\WindowsApplication1.Resources.resources
+D:\Tugas Kuliah Ar, jgn delete please\Program Mahasiswa\Program Mahasiswa\obj\Debug\Program Mahasiswa.vbproj.GenerateResource.Cache
+D:\Tugas Kuliah Ar, jgn delete please\Program Mahasiswa\Program Mahasiswa\obj\Debug\Program Mahasiswa.exe
+D:\Tugas Kuliah Ar, jgn delete please\Program Mahasiswa\Program Mahasiswa\obj\Debug\Program Mahasiswa.xml
+D:\Tugas Kuliah Ar, jgn delete please\Program Mahasiswa\Program Mahasiswa\obj\Debug\Program Mahasiswa.pdb
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Mahasiswa\Program Mahasiswa\obj\Debug\Program Mahasiswa.exe
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Mahasiswa\Program Mahasiswa\obj\Debug\Program Mahasiswa.xml
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Mahasiswa\Program Mahasiswa\obj\Debug\Program Mahasiswa.pdb

@@ -1,0 +1,9 @@
+
+header
+{
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)),url(sad1.jpg);
+    height: 150vh;
+    width: 60vh;
+    background-size: cover;
+    background-position: center;
+}

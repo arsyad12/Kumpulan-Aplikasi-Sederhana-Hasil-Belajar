@@ -1,0 +1,35 @@
+<?php
+include"conf/koneksi.php";
+
+if(isset($_POST['nama'])){
+
+$foto=$_FILES['foto']['name']; 
+$tmp=$_FILES['foto']['tmp_name'];
+
+
+
+
+$tgl_upload=date("dmYHis").$foto;
+
+$path="foto_ar/".$tgl_upload;
+
+if (!empty($path)) {
+	
+
+
+move_uploaded_file($tmp,$path);
+	$simpan=mysqli_query($con, "insert into barang (nama, id_kategori, deskripsi, jumlah, foto)
+		values ('$_POST[nama]','$_POST[kategori]','$_POST[deskripsi]','$_POST[jumlah]','$path')");
+
+header('Location:index.php');
+	
+		
+	}else{
+		$simpan=mysqli_query($con, "insert into barang (nama, id_kategori, deskripsi, jumlah)
+		values ('$_POST[nama]', '$_POST[kategori]', '$_POST[deskripsi]','$_POST[jumlah]')");
+
+header('Location:index.php');
+	}
+}
+
+?>

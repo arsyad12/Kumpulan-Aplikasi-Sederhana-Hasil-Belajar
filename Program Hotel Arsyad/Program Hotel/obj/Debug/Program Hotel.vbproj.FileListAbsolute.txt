@@ -1,0 +1,16 @@
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel\Program Hotel\bin\Debug\Program Hotel.exe
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel\Program Hotel\bin\Debug\Program Hotel.pdb
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel\Program Hotel\bin\Debug\Program Hotel.xml
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel\Program Hotel\obj\Debug\ResolveAssemblyReference.cache
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel\Program Hotel\obj\Debug\WindowsApplication1.Form1.resources
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel\Program Hotel\obj\Debug\WindowsApplication1.Resources.resources
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel\Program Hotel\obj\Debug\Program Hotel.vbproj.GenerateResource.Cache
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel\Program Hotel\obj\Debug\Program Hotel.exe
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel\Program Hotel\obj\Debug\Program Hotel.xml
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel\Program Hotel\obj\Debug\Program Hotel.pdb
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel Arsyad\Program Hotel\obj\Debug\Program Hotel.exe
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel Arsyad\Program Hotel\obj\Debug\Program Hotel.xml
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel Arsyad\Program Hotel\obj\Debug\Program Hotel.pdb
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel Arsyad\Program Hotel\obj\Debug\ResolveAssemblyReference.cache
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel Arsyad\Program Hotel\obj\Debug\WindowsApplication1.Resources.resources
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Program Hotel Arsyad\Program Hotel\obj\Debug\Program Hotel.vbproj.GenerateResource.Cache

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+  grid-area: header;
+  background-color: green;
+  padding: 30px;
+  padding-bottom: 0px;
+  padding-left:0px;
+  padding-right: 0px;
+  text-align: left;
+  font-size: 20px;
+}
+
+#idsaya{
+  background-color: yellow;
+  padding: 40px;
+  padding-bottom: 0px;
+  padding-left:0px;
+  padding-right: 0px;
+  text-align: left;
+  height: 80px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  'header header header header header header' 
+  'idsaya idsaya idsaya idsaya idsaya idsaya'
+  'left middle middle middle middle right' 
+  'footer footer footer footer footer footer';
+
+
+} 
+.#idsaya,
+.left,
+.middle,
+.right {
+  padding: 0px;
+  height: 800px; 
+}
+
+.left {
+  grid-area: left;
+}
+
+
+.middle {
+  grid-area: middle;
+  width: 1500px;
+}
+
+
+.right {
+  grid-area: right;
+}
+
+
+.footer {
+  grid-area: footer;
+  background-color: violet;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="grid-container">
+  <div class="header">
+
+    <h2>THIS IS LAYOUT</h2>
+<p>In this example, we have created a header, three unequal columns and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect.</p>
+<p id=idsaya> <strong>Note:</strong>  <a href="">Home</a>    <a href="https://arsyadbaso123.000webhostapp.com/">Project</a>   <a href="https://www.w3schools.com/">Web Rujukan</a> </p>
+  </div>
+
+
+<div class="left" style="background-color:orange;"><br>
+
+<center><h2>PROFIL FRONT END</h2>
+</center>
+
+<table align = center border=1>
+<tr><td rowspan=8><img src =ar.jpg width=140px height=175 px> </td></tr>
+</table>
+
+<br>
+
+<table align = center border=1>
+<td><font color= white>Nomor Induk Mahasiswa</td></font>    <td><font color= white>1755201065</td></tr></font>
+<td><font color= white>Nama</td></font>             <td><font color= white>Arsyad Basofil Amri</td> </tr></font>
+<td><font color= white>Alamat</td></font>           <td><font color= white>jl. flmaboyan</td></tr></font>
+<td><font color= white>Jenis Kelamin</td></font>        <td><font color= white>pria</td></tr></font>
+<td><font color= white>Pekerjaan</td></font>          <td><font color= white>mahasiswa</td></tr></font>
+<td><font color= white>Nomor HP</td></font>           <td><font color= white>085278685693</td></tr></font>
+<td><font color= white>E-mail</td></font>           <td><font color= white>arsyadbaso123@gmail.com</td></tr></font>
+</table>
+
+<br>
+
+<left>ingin menghubungi saya silahkan isi form berikut</left>
+<br>
+<br>
+<form>
+NAMA    : <input type = text> 
+<br>
+<br>
+EMAIL   : <input type = text><br>
+
+<br>
+<br>
+
+Tanggapan kamu tentang web ini  : 
+<br>
+<br>
+
+<input type=radio value=BAGUS> BAGUS
+<input type=radio value=BIASA> BIASA
+<input type=radio value=BURUK> BURUK
+<br>
+<br>
+
+<input type=submit value=simpan>
+<input type=submit value=cancel>
+
+<br>
+<br>
+
+  </div>
+  
+  <div class="middle" style="background-color:red;"><br>
+    <h2>CSS Template using Grid</h2>
+<p>In this example, we have created a header, three unequal columns and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect.</p>
+<p><strong>Note:</strong> The Grid Layout Module is not supported in Internet Explorer or Edge 15 eand earlier versions.</p>
+</div>
+
+
+  <div class="footer">
+    <p>Footer</p>
+  </div>
+</div>
+
+</body>
+</html>

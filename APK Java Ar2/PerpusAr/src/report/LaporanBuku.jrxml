@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="1129" pageHeight="595" orientation="Landscape" columnWidth="1089" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="447076e7-eb0c-42a3-a26d-b214c0ef922a">
+	<property name="ireport.zoom" value="0.7513148009015777"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="laporanbuku" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     buku.`id_buku` AS buku_id_buku,
+     buku.`nama_buku` AS buku_nama_buku,
+     buku.`genre` AS buku_genre,
+     buku.`penulis` AS buku_penulis,
+     buku.`terbit` AS buku_terbit,
+     buku.`penerbit` AS buku_penerbit,
+     buku.`masuk` AS buku_masuk,
+     buku.`letak` AS buku_letak,
+     buku.`foto` AS buku_foto
+FROM
+     `buku` buku
+where id_buku =$P{laporanbuku}]]>
+	</queryString>
+	<field name="buku_id_buku" class="java.lang.String"/>
+	<field name="buku_nama_buku" class="java.lang.String"/>
+	<field name="buku_genre" class="java.lang.String"/>
+	<field name="buku_penulis" class="java.lang.String"/>
+	<field name="buku_terbit" class="java.sql.Date"/>
+	<field name="buku_penerbit" class="java.lang.String"/>
+	<field name="buku_masuk" class="java.sql.Date"/>
+	<field name="buku_letak" class="java.lang.String"/>
+	<field name="buku_foto" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="136" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="270" y="0" width="519" height="62" uuid="74b763d7-7e5d-43fc-875d-da365717237e"/>
+				<textElement verticalAlignment="Middle">
+					<font pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[LAPORAN BUKU AR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="445" y="62" width="196" height="22" uuid="1c51763f-fc4c-43f3-a3fb-3bc897eaddb2"/>
+				<textElement>
+					<font fontName="Times New Roman" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[RIKA CHAN]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="802" height="1" uuid="52ec3616-4346-4989-b15c-1c54b0b477e0"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="12" y="0" width="89" height="15" forecolor="#736343" uuid="0ea5a02e-a21c-44a0-9334-9aaf7fa86a25"/>
+				<text><![CDATA[ID BUKU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="118" y="0" width="89" height="15" forecolor="#736343" uuid="a18e07e3-4e86-47b3-9a4e-64460435ac28"/>
+				<text><![CDATA[NAMA BUKU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="218" y="1" width="89" height="15" forecolor="#736343" uuid="57da6d7c-4328-4ba2-9f23-590a17552a5c"/>
+				<text><![CDATA[GENRE BUKU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="321" y="0" width="106" height="15" forecolor="#736343" uuid="b559a373-63aa-4d7f-a2c7-b150ba59dfe5"/>
+				<text><![CDATA[PENULIS BUKU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="445" y="0" width="118" height="15" forecolor="#736343" uuid="faa4bc10-7121-462e-855e-a30660525017"/>
+				<text><![CDATA[TGL TERBIT BUKU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="589" y="0" width="105" height="15" forecolor="#736343" uuid="b8d06e9b-1dad-43c7-a8dc-c1dcd380c7fc"/>
+				<text><![CDATA[PENERBIT BUKU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="713" y="1" width="152" height="15" forecolor="#736343" uuid="01f9323c-98c3-4f52-9612-0440c44e6b0f"/>
+				<text><![CDATA[TANGGAL BUKU MASUK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="889" y="0" width="89" height="15" forecolor="#736343" uuid="6a934db8-e51f-47fb-869f-9e05dac61475"/>
+				<text><![CDATA[LETAK BUKU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="988" y="0" width="89" height="15" forecolor="#736343" uuid="c11c1a63-5404-49c8-b9d2-b9e10a825ec7"/>
+				<text><![CDATA[FOTO BUKU]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="26" splitType="Stretch">
+			<frame>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="802" height="15" uuid="271d5184-5c31-4a01-9f9c-9432645c8cd0"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="12" y="0" width="89" height="15" uuid="571e8277-e233-49da-8dae-98e01277f01d"/>
+					<textFieldExpression><![CDATA[$F{buku_id_buku}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="118" y="0" width="89" height="15" uuid="9cc1cc6d-1ed9-4e3f-95e2-51e6c0dfd23c"/>
+					<textFieldExpression><![CDATA[$F{buku_nama_buku}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="218" y="0" width="89" height="15" uuid="a39656d9-6503-499a-9daf-855290b127b5"/>
+					<textFieldExpression><![CDATA[$F{buku_genre}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="321" y="0" width="89" height="15" uuid="1103ea2f-9b41-462d-a885-a10437dcf422"/>
+					<textFieldExpression><![CDATA[$F{buku_penulis}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="589" y="0" width="89" height="15" uuid="bf9a3720-0699-4ad8-8da0-a393b78f92c8"/>
+					<textFieldExpression><![CDATA[$F{buku_terbit}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="445" y="0" width="89" height="15" uuid="f3ff1002-42a3-43b7-a366-c5f7eeb2bc58"/>
+					<textFieldExpression><![CDATA[$F{buku_penerbit}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="713" y="0" width="89" height="15" uuid="b8bb768b-f9bf-4b73-922f-0d9314104176"/>
+					<textFieldExpression><![CDATA[$F{buku_masuk}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="988" y="4" width="89" height="15" uuid="97759d3a-0c52-49d8-8247-4cdffde21757"/>
+				<textFieldExpression><![CDATA[$F{buku_foto}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="889" y="4" width="89" height="15" uuid="5881a55f-24a3-4227-bd9e-365fd407a49b"/>
+				<textFieldExpression><![CDATA[$F{buku_letak}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="22" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="802" height="1" uuid="858c3d26-ed1c-4e02-b596-ce16b8490e94"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

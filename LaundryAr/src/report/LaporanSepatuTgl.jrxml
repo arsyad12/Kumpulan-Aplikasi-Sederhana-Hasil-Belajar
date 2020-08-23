@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cd3c5926-f6ad-4eae-84ff-74bdfb33f770">
+	<property name="ireport.zoom" value="0.8264462809917354"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="tgl1" class="java.lang.String"/>
+	<parameter name="tgl2" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     sepatu.`id_sepatu` AS sepatu_id_sepatu,
+     sepatu.`nama_sepatu` AS sepatu_nama_sepatu,
+     sepatu.`jenis_sepatu` AS sepatu_jenis_sepatu,
+     sepatu.`banyak_sepatu` AS sepatu_banyak_sepatu,
+     sepatu.`tgl_kirim` AS sepatu_tgl_kirim,
+     sepatu.`tgl_jemput` AS sepatu_tgl_jemput,
+     sepatu.`letak` AS sepatu_letak,
+     sepatu.`foto` AS sepatu_foto
+FROM
+     `sepatu` sepatu
+
+where tgl_kirim between $P{tgl1} and $P{tgl2}]]>
+	</queryString>
+	<field name="sepatu_id_sepatu" class="java.lang.String"/>
+	<field name="sepatu_nama_sepatu" class="java.lang.String"/>
+	<field name="sepatu_jenis_sepatu" class="java.lang.String"/>
+	<field name="sepatu_banyak_sepatu" class="java.lang.Integer"/>
+	<field name="sepatu_tgl_kirim" class="java.sql.Date"/>
+	<field name="sepatu_tgl_jemput" class="java.sql.Date"/>
+	<field name="sepatu_letak" class="java.lang.String"/>
+	<field name="sepatu_foto" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="136" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="270" y="0" width="263" height="62" uuid="8880e23f-5a78-4fed-9383-374b7c9f221a"/>
+				<textElement verticalAlignment="Middle">
+					<font pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Coffee Title]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="303" y="62" width="196" height="22" uuid="5b46ddca-1681-4901-af38-79bc43370062"/>
+				<textElement>
+					<font fontName="Times New Roman" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Coffee SubTitle]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="172" y="94" width="383" height="42" uuid="c7dff411-de57-4a84-b88e-9a8a8182f0d8"/>
+				<textElement textAlignment="Right">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor purus gravida arcu aliquam mattis. Donec et nulla libero, ut varius massa. Nulla sed turpis elit. Etiam aliquet mauris a ligula hendrerit in auctor leo lobortis.]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="802" height="1" uuid="67c6b1ea-8591-4eef-99d0-c76b0386ab63"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="0" width="100" height="15" forecolor="#736343" uuid="aec1f2b6-f9de-4fdc-b1c7-5942c630eb72"/>
+				<text><![CDATA[ID SEPATU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="100" y="0" width="100" height="15" forecolor="#736343" uuid="7a8d1da0-81c1-4d91-9770-5ba111b6de1f"/>
+				<text><![CDATA[NAMA SEPATU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="200" y="0" width="100" height="15" forecolor="#736343" uuid="a3596a5d-a1fe-49bc-b8e1-2f2186c9ebaa"/>
+				<text><![CDATA[JENIS SEPATU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="300" y="0" width="100" height="15" forecolor="#736343" uuid="fbdc27a6-8202-4110-8723-cc9cec56e8d4"/>
+				<text><![CDATA[BANYAK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="400" y="0" width="100" height="15" forecolor="#736343" uuid="4abac4bf-9f8b-4bc9-abcf-0d3c5992901b"/>
+				<text><![CDATA[TGL KIRIM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="500" y="0" width="100" height="15" forecolor="#736343" uuid="9a058a1e-5470-4c09-a75b-ca435d371f16"/>
+				<text><![CDATA[TGL JEMPUT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="600" y="0" width="100" height="15" forecolor="#736343" uuid="7c020ed8-9fdd-4c51-aa60-222a79c5d51c"/>
+				<text><![CDATA[LEATK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="700" y="0" width="100" height="15" forecolor="#736343" uuid="761cdd79-9cd7-495d-88b3-9bdcfab505e8"/>
+				<text><![CDATA[FOTO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<frame>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="802" height="15" uuid="208993b0-5490-44fd-86a6-e40cacbe7850"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="0" y="0" width="100" height="15" uuid="1e0cf57f-dbb8-4dea-86c1-c34545bae0dd"/>
+					<textFieldExpression><![CDATA[$F{sepatu_id_sepatu}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="100" y="0" width="100" height="15" uuid="b6b22091-c135-4580-90a3-c91c5818c5c8"/>
+					<textFieldExpression><![CDATA[$F{sepatu_nama_sepatu}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="200" y="0" width="100" height="15" uuid="9651d11a-fc5e-4908-9e9d-e03f3f567907"/>
+					<textFieldExpression><![CDATA[$F{sepatu_jenis_sepatu}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="300" y="0" width="100" height="15" uuid="a93766fe-8e51-4bcc-a02f-23889f0559ba"/>
+					<textFieldExpression><![CDATA[$F{sepatu_banyak_sepatu}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="400" y="0" width="100" height="15" uuid="71001c94-0549-4a8d-98bf-9276a9fef9d3"/>
+					<textFieldExpression><![CDATA[$F{sepatu_tgl_kirim}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="500" y="0" width="100" height="15" uuid="ef8b972b-a705-43d7-84b6-e16b71deb2b2"/>
+					<textFieldExpression><![CDATA[$F{sepatu_tgl_jemput}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="600" y="0" width="100" height="15" uuid="a00da4f8-f2c7-4f56-b72c-c30df7d4226a"/>
+					<textFieldExpression><![CDATA[$F{sepatu_letak}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="700" y="0" width="100" height="15" uuid="23fe1b5b-3743-4bba-bc42-277aa21d6d96"/>
+					<textFieldExpression><![CDATA[$F{sepatu_foto}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="6" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="802" height="1" uuid="b2dac4d9-e3e1-4252-ad87-e35954011e8e"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

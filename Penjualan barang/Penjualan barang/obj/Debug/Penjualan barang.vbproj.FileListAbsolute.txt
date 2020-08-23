@@ -1,0 +1,13 @@
+D:\Tugas Kuliah Ar, jgn delete please\Penjualan barang\Penjualan barang\bin\Debug\Penjualan barang.exe
+D:\Tugas Kuliah Ar, jgn delete please\Penjualan barang\Penjualan barang\bin\Debug\Penjualan barang.pdb
+D:\Tugas Kuliah Ar, jgn delete please\Penjualan barang\Penjualan barang\bin\Debug\Penjualan barang.xml
+D:\Tugas Kuliah Ar, jgn delete please\Penjualan barang\Penjualan barang\obj\Debug\ResolveAssemblyReference.cache
+D:\Tugas Kuliah Ar, jgn delete please\Penjualan barang\Penjualan barang\obj\Debug\WindowsApplication1.Form1.resources
+D:\Tugas Kuliah Ar, jgn delete please\Penjualan barang\Penjualan barang\obj\Debug\WindowsApplication1.Resources.resources
+D:\Tugas Kuliah Ar, jgn delete please\Penjualan barang\Penjualan barang\obj\Debug\Penjualan barang.vbproj.GenerateResource.Cache
+D:\Tugas Kuliah Ar, jgn delete please\Penjualan barang\Penjualan barang\obj\Debug\Penjualan barang.exe
+D:\Tugas Kuliah Ar, jgn delete please\Penjualan barang\Penjualan barang\obj\Debug\Penjualan barang.xml
+D:\Tugas Kuliah Ar, jgn delete please\Penjualan barang\Penjualan barang\obj\Debug\Penjualan barang.pdb
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Penjualan barang\Penjualan barang\obj\Debug\Penjualan barang.exe
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Penjualan barang\Penjualan barang\obj\Debug\Penjualan barang.xml
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\Penjualan barang\Penjualan barang\obj\Debug\Penjualan barang.pdb

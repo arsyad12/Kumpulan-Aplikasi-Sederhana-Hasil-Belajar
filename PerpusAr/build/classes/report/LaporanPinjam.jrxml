@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cf180f52-f8a2-419b-b084-d3760c4d8821">
+	<property name="ireport.zoom" value="0.8264462809917354"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="laporanpinjam" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     pinjam.`id_pinjam` AS pinjam_id_pinjam,
+     pinjam.`id_buku` AS pinjam_id_buku,
+     pinjam.`id_anggota` AS pinjam_id_anggota,
+     pinjam.`status` AS pinjam_status,
+     pinjam.`tglpinjam` AS pinjam_tglpinjam,
+     pinjam.`tglkembali` AS pinjam_tglkembali,
+     pinjam.`petugas` AS pinjam_petugas
+FROM
+     `pinjam` pinjam
+where id_pinjam =$P{laporanpinjam}]]>
+	</queryString>
+	<field name="pinjam_id_pinjam" class="java.lang.String"/>
+	<field name="pinjam_id_buku" class="java.lang.String"/>
+	<field name="pinjam_id_anggota" class="java.lang.String"/>
+	<field name="pinjam_status" class="java.lang.String"/>
+	<field name="pinjam_tglpinjam" class="java.sql.Date"/>
+	<field name="pinjam_tglkembali" class="java.sql.Date"/>
+	<field name="pinjam_petugas" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="136" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="175" y="0" width="478" height="62" uuid="ebb0d8ca-c519-48e7-b8e5-9387555471c3"/>
+				<textElement verticalAlignment="Middle">
+					<font pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[LAPORAN PINJAM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="342" y="62" width="196" height="22" uuid="8b24ae3a-1b89-46f2-9fea-62c466b3c953"/>
+				<textElement>
+					<font fontName="Times New Roman" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[RATNA SAMA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="802" height="1" uuid="311e117d-5573-4dda-a014-86ebc9212958"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="0" width="114" height="15" forecolor="#736343" uuid="a1c69288-6c74-4c21-ade3-03332109ffca"/>
+				<text><![CDATA[ID PINJAM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="114" y="0" width="114" height="15" forecolor="#736343" uuid="ca98d1c5-095c-452f-aaf7-e97d4a7b0883"/>
+				<text><![CDATA[ID BUKU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="228" y="0" width="114" height="15" forecolor="#736343" uuid="eb9313fa-e822-431e-b37e-dee171bd6551"/>
+				<text><![CDATA[ID ANGGOTA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="342" y="0" width="114" height="15" forecolor="#736343" uuid="767e335b-8509-406c-862d-d4d8fc2f261e"/>
+				<text><![CDATA[STATUS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="456" y="0" width="114" height="15" forecolor="#736343" uuid="aaa97976-da8e-48b2-a92c-9dd39615c4ed"/>
+				<text><![CDATA[TGL PINJAM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="570" y="0" width="114" height="15" forecolor="#736343" uuid="c4b59ad2-79e2-438d-ac73-a82dd3dc9c14"/>
+				<text><![CDATA[DEADLINE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="684" y="0" width="114" height="15" forecolor="#736343" uuid="957554f1-b817-4559-b9de-d20341239641"/>
+				<text><![CDATA[PETUGAS]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<frame>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="802" height="15" uuid="bcfce6be-30ce-4939-b29f-6fbb74186d78"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="0" y="0" width="114" height="15" uuid="a6d08bc9-a1a4-4c6b-87fc-8d0a8ba72ca4"/>
+					<textFieldExpression><![CDATA[$F{pinjam_id_pinjam}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="114" y="0" width="114" height="15" uuid="e113f289-172c-484f-99b7-14e02aadbf1c"/>
+					<textFieldExpression><![CDATA[$F{pinjam_id_buku}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="228" y="0" width="114" height="15" uuid="f91030ca-fc73-48e1-b6c6-a88958a8e538"/>
+					<textFieldExpression><![CDATA[$F{pinjam_id_anggota}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="342" y="0" width="114" height="15" uuid="58a5bbd5-6e4c-4342-9451-89f0055a25ac"/>
+					<textFieldExpression><![CDATA[$F{pinjam_status}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="456" y="0" width="114" height="15" uuid="96adfa0c-0a0d-4552-a5a1-cd7dca87d8e7"/>
+					<textFieldExpression><![CDATA[$F{pinjam_tglpinjam}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="570" y="0" width="114" height="15" uuid="41fc3716-f7a6-44ff-bd8b-51d7cff53f39"/>
+					<textFieldExpression><![CDATA[$F{pinjam_tglkembali}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="684" y="0" width="114" height="15" uuid="93dcbfa8-ff5a-422d-b24e-e5748d9f6748"/>
+					<textFieldExpression><![CDATA[$F{pinjam_petugas}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="6" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="802" height="1" uuid="1391da97-f64b-41e8-92c4-ad936394b6dc"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

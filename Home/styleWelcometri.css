@@ -1,0 +1,13 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(narutoo.png);
+    height: 400vh;
+    width: 276vh;
+    background-size: cover;
+    background-position: right;
+}

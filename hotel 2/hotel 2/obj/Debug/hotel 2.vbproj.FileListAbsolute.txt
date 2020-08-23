@@ -1,0 +1,10 @@
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\hotel 2\hotel 2\bin\Debug\hotel 2.exe
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\hotel 2\hotel 2\bin\Debug\hotel 2.pdb
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\hotel 2\hotel 2\bin\Debug\hotel 2.xml
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\hotel 2\hotel 2\obj\Debug\ResolveAssemblyReference.cache
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\hotel 2\hotel 2\obj\Debug\WindowsApplication1.hotel.resources
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\hotel 2\hotel 2\obj\Debug\WindowsApplication1.Resources.resources
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\hotel 2\hotel 2\obj\Debug\hotel 2.vbproj.GenerateResource.Cache
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\hotel 2\hotel 2\obj\Debug\hotel 2.exe
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\hotel 2\hotel 2\obj\Debug\hotel 2.xml
+E:\ARSYAD\Tugas Kuliah Ar, jgn delete please\hotel 2\hotel 2\obj\Debug\hotel 2.pdb
